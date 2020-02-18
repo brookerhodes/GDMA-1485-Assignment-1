@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+} 
+
+.wrapper {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.row {
+	overflow: auto;
+}
+
+.bg-green {
+	background-color: #10443f;
+}
+
+#logo {
+	float:left;
+	margin: 0 auto;
+}
+
+#logo h1, #team-info h2 {
+	font-size: 25px;
+	color: white;
+	font-family: 'Pacifico', cursive;
+	font-weight: 300;
+}
+
+#logo h1 {
+	margin: 20px;
+}
+
+#meet-brandi p:first-child span {
+  color: #0fdc95;
+  font-weight: 200;
+}
+
+#meet-brandi p:last-child span {
+	display: inline-block;
+	background-color: #104f41;
+	color: #0fdc95;
+	width: 10px;
+	height: 10px;
+	
+}
+
+#features {
+	background-color: #f4f7f9;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+#works {
+	margin: 30px 40px 30px 40px;
+	padding: 70px;
+}
+
+#works p {
+	width: 800px;
+	margin: 0 auto;
+}
+
+#team {
+	background-color: #1ea78d;
+	color: white;
+}
+
+#team-info {
+	width: 400px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+li{
+	display:inline;
+}
+
+nav {
+	float: right;
+	width: 400px;
+	text-align: right;
+	padding-top: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	
+}
+
+header {
+	color: white;
+}
+
+
+h1 {
+	font-size: 20px;
+	color: white;
+}
+
+.light-green-header {
+	color: #1ea78d;
+	text-align: center;
+	font-size: 30px;
+}
+
+li {
+	margin-left: 20px;
+	font-size: 15px;
+}
+
+ul {
+	padding: 0px;
+}
+
+#meet-brandi {
+	background-color: #104f41;
+	color: white;
+	padding: 300px 0px 200px;
+	text-align: center;
+	font-weight: 400;
+}
+
+
+#meet-brandi p:first-child {
+	font-size: 48px;
+	margin: 0px 0px 30px;
+	font-weight: 600;
+}
+
+
+
+.col-3 {
+	width: 300px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.col-3:first-child {
+	float: right;
+	margin-right: 20px;
+	margin-left: 115px;
+}
+
+.col-3:nth-child(2) {
+	float: right;
+	width: 300px;
+	margin: 0px 10px 0px 10px;
+}
+
