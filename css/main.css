@@ -1,6 +1,32 @@
 @charset "utf-8";
 /* CSS Document */
 
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Settings: used with preprocessors and contain font, colors definitions, etc.
+2.0 - Tools: globally used mixins and functions. Use for preprocessor only.
+3.0 - Generic: reset and/or normalize styles, box-sizing definition, etc. 
+4.0 - Elements: styling for bare/generic HTML elements 
+        - Forms
+        - Lists
+        - Media
+        - Tables
+        - Typography: Headings, Paragraphs, Blockquotes, Anchors
+5.0 - Objects: class-based selectors which define undecorated design patterns, building blocks
+        - Framework
+6.0 - Components: specific designed components
+        - Buttons
+        - Header
+        - Navigation 
+7.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
+        - Alignment        
+        - Color
+        - Size
+
+/*--------------------------------------------------------------
+3.0 -GENERIC 
+-------------------------------------------------------------- */
 
 * {
 	-webkit-box-sizing: border-box;
@@ -11,79 +37,13 @@
 	font-family: 'Open Sans', sans-serif;
 } 
 
-.wrapper {
-	width: 1170px;
-	margin: 0 auto;
-}
 
-.row {
-	overflow: auto;
-}
 
-.bg-green {
-	background-color: #10443f;
-}
 
-#logo {
-	float:left;
-	margin: 0 auto;
-}
-
-#logo h1, #team-info h2 {
-	font-size: 25px;
-	color: white;
-	font-family: 'Pacifico', cursive;
-	font-weight: 300;
-}
-
-#logo h1 {
-	margin: 20px;
-}
-
-#meet-brandi p:first-child span {
-  color: #0fdc95;
-  font-weight: 200;
-}
-
-#meet-brandi p:last-child span {
-	display: inline-block;
-	background-color: #104f41;
-	color: #0fdc95;
-	width: 10px;
-	height: 10px;
-	
-}
-
-#features {
-	background-color: #f4f7f9;
-	padding-top: 30px;
-	padding-bottom: 30px;
-}
-
-#works {
-	margin: 30px 40px 30px 40px;
-	padding: 70px;
-}
-
-#works p {
-	width: 800px;
-	margin: 0 auto;
-}
-
-#team {
-	background-color: #1ea78d;
-	color: white;
-}
-
-#team-info {
-	width: 400px;
-	margin-top: 100px;
-	margin-bottom: 100px;
-}
-
-li{
-	display:inline;
-}
+/*--------------------------------------------------------------
+4.0 -ELEMENTS
+-------------------------------------------------------------- */
+/*TYPOGRAPHY*/
 
 nav {
 	float: right;
@@ -92,26 +52,12 @@ nav {
 	padding-top: 20px;
 }
 
-a {
-	text-decoration: none;
-	color: white;
-	
+ul {
+	padding: 0px;
 }
 
-header {
-	color: white;
-}
-
-
-h1 {
-	font-size: 20px;
-	color: white;
-}
-
-.light-green-header {
-	color: #1ea78d;
-	text-align: center;
-	font-size: 30px;
+li{
+	display:inline;
 }
 
 li {
@@ -119,18 +65,42 @@ li {
 	font-size: 15px;
 }
 
-ul {
-	padding: 0px;
+
+h1 {
+	font-size: 20px;
+}
+
+/*TYPOGRAPHY ID & CLASSES*/
+
+
+#logo {
+	float:left;
+	margin: 0 auto;
+}
+
+#logo h1, #team-info h2 {
+	font-size: 20px;
+	font-family: 'Pacifico', cursive;
+	font-weight: 300;
+}
+
+
+#logo h1 {
+	margin: 20px;
 }
 
 #meet-brandi {
-	background-color: #104f41;
-	color: white;
 	padding: 300px 0px 200px;
-	text-align: center;
 	font-weight: 400;
 }
 
+#meet-brandi p span:first-child, #meet-brandi p span:last-child {
+	padding: 0px 10px 0px 10px;
+}
+
+#meet-brandi p:first-child span {
+  font-weight: 200;
+}
 
 #meet-brandi p:first-child {
 	font-size: 48px;
@@ -139,22 +109,131 @@ ul {
 }
 
 
+#meet-brandi p:last-child span {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	
+}
+
+.light-green-header h2 {
+	text-transform: uppercase;
+	font-size: 25px;
+}
+
+#works {
+	margin: 30px 40px 30px 40px;
+	padding: 70px;
+}
+
+#works p, .light-green-header, #meet-brandi {
+	text-align: center;
+}
+
+#works p {
+	padding-top: 40px;
+	width: 800px;
+	margin: 0 auto;
+}
+
+
+#works p {
+	padding: 40px 0px 100px 0px;
+}
 
 .col-3 {
+	float: left;
 	width: 300px;
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding: 40px 0px 60px 0px;
 }
 
 .col-3:first-child {
-	float: right;
-	margin-right: 20px;
-	margin-left: 115px;
+	float: left;
+	margin: 0px 20px 0px 100px;
 }
 
 .col-3:nth-child(2) {
-	float: right;
+	float: left;
 	width: 300px;
-	margin: 0px 10px 0px 10px;
+	margin: 0px 80px 0px 50px;
 }
 
+
+#team-info {
+	width: 300px;
+	margin: 100px 0px 100px 0px;
+}
+
+/*COLORS*/
+
+a {
+	text-decoration: none;	
+}
+
+a, h1, header, #logo h1, #team-info h2, #team, #meet-brandi {
+	color: #FEFBFB;
+}
+
+
+.bg-green {
+	background-color: #10443f;
+}
+
+#logo span {
+	font-size: 15px;
+	color:#104f41;
+}
+
+#meet-brandi p:first-child span, nav a:hover, #meet-brandi p span:first-child, #meet-brandi p span:last-child {
+	color: #0fdc95;
+}
+
+#meet-brandi p:last-child span, #meet-brandi {
+	background-color:#104f41;
+}
+
+
+#features {
+	background-color: #f4f7f9;
+	padding: 30px 0px 30px;
+}
+
+ .light-green-header {
+	  border-bottom: solid 3px;
+	 border-bottom-color: #DFDFDF;
+	 width: 300px;
+	 margin: 0 auto;
+}
+.light-green-header {
+	color: #1ea78d;
+	font-size: 30px;
+}
+
+
+#team {
+	padding: 30px;
+	background-color: #1ea78d;
+}
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+5.0 -OBJECTS
+-------------------------------------------------------------- */
+
+/*FRAMEWORK*/
+
+.wrapper {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.row {
+	overflow: auto;
+}
