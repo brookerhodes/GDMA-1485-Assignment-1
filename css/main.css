@@ -70,6 +70,41 @@ h1 {
 	font-size: 20px;
 }
 
+
+/*COLORS*/
+
+a {
+	text-decoration: none;	
+}
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+5.0 -OBJECTS
+-------------------------------------------------------------- */
+
+/*FRAMEWORK*/
+
+.wrapper {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.row {
+	overflow: auto;
+}
+
+/*--------------------------------------------------------------
+6.0 -COMPONENTS
+-------------------------------------------------------------- */
+
 /*TYPOGRAPHY ID & CLASSES*/
 
 
@@ -166,10 +201,6 @@ h1 {
 
 /*COLORS*/
 
-a {
-	text-decoration: none;	
-}
-
 a, h1, header, #logo h1, #team-info h2, #team, #meet-brandi {
 	color: #FEFBFB;
 }
@@ -215,25 +246,3 @@ a, h1, header, #logo h1, #team-info h2, #team, #meet-brandi {
 	background-color: #1ea78d;
 }
 
-
-
-
-
-
-
-
-
-/*--------------------------------------------------------------
-5.0 -OBJECTS
--------------------------------------------------------------- */
-
-/*FRAMEWORK*/
-
-.wrapper {
-	width: 1170px;
-	margin: 0 auto;
-}
-
-.row {
-	overflow: auto;
-}
